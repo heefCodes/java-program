@@ -3,8 +3,6 @@ package heath_record;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-import targetHeartRateCalculattor.HeartRates;
-
 public class HealthProfileTest {
     public static void main(String[] args) {
         LocalDate date = LocalDate.of(1991, 9, 2);
