@@ -56,6 +56,7 @@ public class HeartRates {
         LocalDate  birth = LocalDate.of(year, month, day); 
         
         dateOfBirth = birth;
+    
      }
     
     public static int calculateAge() {
