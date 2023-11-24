@@ -31,7 +31,7 @@ public class HealthProfileTest {
 
         System.out.printf("%nGender: %s%n", healthProfile.getGender());
         
-        System.out.printf("You are %d years old.\n", HealthProfile.userAge());
+        System.out.printf("You are %d years old.%n", HealthProfile.userAge());
 
         System.out.printf("Your weight: %s%n", healthProfile.getWeight());
         System.out.printf("Your height: %s%n", healthProfile.getHeight());

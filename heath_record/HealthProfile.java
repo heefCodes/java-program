@@ -117,7 +117,7 @@ public class HealthProfile {
         return (int) tarHR1;
     }
     public static int userTargetHeartRate2(){
-        double tarHR2 = userMaxHeartRate() * 0.58;
+        double tarHR2 = userMaxHeartRate() * 0.85;
         return (int) tarHR2;
     }
     public static int bodyMassIndex(){

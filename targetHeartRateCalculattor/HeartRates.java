@@ -79,7 +79,7 @@ public class HeartRates {
         return (int)tarHR1;
     }
     public static int calculateTatgetHeartRate2() {
-        double tarHR2 =  calculateMaxHeartRate() * 0.58;
+        double tarHR2 =  calculateMaxHeartRate() * 0.85;
         return (int)tarHR2;
     }
 }
