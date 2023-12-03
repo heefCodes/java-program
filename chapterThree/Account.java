@@ -1,30 +1,32 @@
 package chapterThree;
 
-public class Account {
-    private String name;
-    private double balance;
+import java.math.BigDecimal;
 
-    public Account(String name, double balance) {
+public class Account {
+    private  String name = "";
+    private BigDecimal balance;
+
+    public Account(String name, BigDecimal balance) {
         this.name = name;
 
-        if (balance > 0.0) {
+        if (balance.compareTo(BigDecimal.ZERO) > 0) {
             this.balance = balance;
         }
     }
-    public void deposit(double amount) {
-        if (balance > 0.0) {
-            balance = balance + amount;
+    public void deposit(BigDecimal depositAmount) {
+        if (depositAmount.compareTo(BigDecimal.ZERO) > 0) {
+            balance = balance.add(depositAmount);
         }
     }
-    public void withdraw(double amount) {
-        if (balance >= amount) {
-            balance = balance - amount;
+    public void withdraw(BigDecimal withdrawAmount) {
+        if (withdrawAmount.compareTo(BigDecimal.ZERO) > 0 && withdrawAmount.compareTo(BigDecimal.ZERO) < balance.compareTo(BigDecimal.ZERO)) {
+            balance = balance.subtract(withdrawAmount);
         }
         else {
             System.out.print("Withdrawal amount exceeded account balance.");
         }
     }
-    public double getBalance() {
+    public BigDecimal getBalance() {
         return balance;
     }
 
