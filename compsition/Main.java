@@ -6,7 +6,9 @@ public class Main {
         BasePlusCommissionEmployee employee = new BasePlusCommissionEmployee(200, commissionEmployee);
 
         System.out.print("Employee information");
-
         System.out.print(employee);
+
+        
+
     }
 }

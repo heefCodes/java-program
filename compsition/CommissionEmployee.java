@@ -1,6 +1,6 @@
 package compsition;
 
-public class CommissionEmployee {
+public class CommissionEmployee extends Object{
     
         private final String firstName;
         private final String lastName;
